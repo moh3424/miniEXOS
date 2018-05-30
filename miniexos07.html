@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MINI exos : 07</title>
+    <style>
+        body{
+            background: olive;
+        }
+        fieldset{
+            background: skyblue;
+        }
+        label.inline{
+            display: inline;
+            /* margin-right: 50px; */
+        }
+       
+    </style>
+</head>
+<body>
+    <h2> Un formulaire d'inscription</h2>
+    <form action="fichier.php" methode="POST">
+        <fieldset>
+            <fieldset>
+                <legend>Identité:</legend>
+                <label for="oui" class="inline">Nom *</label>
+                <input type="text" name="nom"placeholder="nom" required>
+                <label for="prenom" class="inline">Prénon *</label> 
+                <input type="text" name="prenom" placeholder="prenom" required>
+                
+                
+                </fieldset>
+
+                <fieldset>
+                <legend>Votre Adresse:</legend>
+                <label for="adresse" class="inline">Adresse</label>
+                <input type="text" name="adresse"id="adresse"placeholder="adresse" required >
+                <label for="text" class="inline">Code Postal</label>
+                <input type="text" name="prenom" id="prenom"placeholder="code postal" required>
+                <label for="text" class="inline">Ville</label>
+                <input type="text" name="ville" id="Ville"placeholder="Ville" required>
+                <fieldset>
+                        <legend>Vos cordonnées :</legend>
+                        <label for="email">Votre courriel *</label>
+                        <input type="email" name="email" size="25" value="email" required>
+                </fieldset>
+                
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Sexe:</legend>
+                <!-- des boutons radio le 1er est coché -->
+                <input type="radio" name="CSS" value="Homme" checked>
+                <label for="homme" class="inline">Homme </label>
+                <input type="radio" name="CSS" value="Femme">
+                <label for="non" class="inline">Femme </label>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Avez Vous Un Doudou</legend>
+            
+                <!-- des boutons radio le 1er est coché -->
+                <input type="radio" name="CSS" value="oui" checked>
+                <label for="oui" class="inline">Oui</label>
+                <input type="radio" name="CSS" value="non">
+                <label for="non" class="inline">Non</label>
+                <br>    
+            </fieldset>
+            <fieldset>
+                <legend>checkbox</legend>
+                <label for="matos">j'ai de la aiguilles</label>
+                <input type="checkbox" name="matos" value="aiguilles" checked>
+                <label for="matos">j'ai de la la laine</label>
+                <input type="checkbox" name="matos" value="laine" checked>
+                <label for="matos">non rien</label>
+                <input type="checkbox" name="matos" value="non" checked>
+
+            </fieldset>
+            <fieldset>
+                <legend>tricotez-vous</legend>
+                <label for="tricot">Votre usage du tricot</label>
+                <select name="tricot">
+                    <option value="0">choisissez votre niveau en tricot></option>
+                    <option value="jamais">Jamais</option>
+                    <option value="jenefait">Il ya longtemps</option>
+                    <option value="parfois">Parfois</option>
+                    <option value="toujours"> Tous les jours</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                    <legend>Votre commentaire</legend>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="#" cols="50" rows="8" placeholder="Dites-nous en un peu plus si vous le souhaitez...."></textarea>
+            </fieldset>
+                <input type="submit" name="envoyez" value="Envoyez votre  réponse">
+                <input type="reset" name="annulez" value="Annulez">
+                <br>
+                <small>* :champs obligatoire</small>
+                <br>
+            </fieldset>
+        </form>
+   
+</body>
+</html>
