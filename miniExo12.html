@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+   <meta charset="UTF-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+   <title>Mini exo : 12</title>
+
+   <style>
+
+       /* couleurs */
+
+       .vert {
+
+           background:green;
+
+       }
+
+       .orange {
+
+           background: orangered;
+
+       }
+
+       .bleu {
+
+           background: lightblue;
+
+       }
+      .image1{
+          float: right;
+          border: 1px solid plum;
+      }
+      .image2{
+          float: left;
+      }
+      .clearfix{
+          overflow: auto;
+      }
+      .clear{
+          clear:both;
+      }
+
+   </style>
+
+</head>
+
+<body>
+
+   <h2>Dans cette exemple l'image est plus grande que l'élément qui la contient, et elle float donc elle sort du block </h2>
+   <div div class="bleu">
+       <img src="img/montagne.jpg" alt="" class="image1">
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut porro odio beatae obcaecati tempore ullam ab ad dolores incidunt! Eveniet assumenda quia esse officiis voluptatem, magni dicta tempore corporis beatae?</p>
+   </div>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <p class="clear"> On ajoute une classe clearfix avec overflow: auto pour régler le problème</p>
+   <div div class="orange clearfix">
+    <img src="img/montagne.jpg" alt="" class="image2">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut porro odio beatae obcaecati tempore ullam ab ad dolores incidunt! Eveniet assumenda quia esse officiis voluptatem, magni dicta tempore corporis beatae?</p>
+</div>
+   
+   
+
+    
+   
+</body>
+
+</html>
